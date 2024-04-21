@@ -143,7 +143,7 @@ model.fit(x=X_train, y=y_train, validation_data=(X_test,y_test),
 ```
 
 ### metrics
-
+```
 metrics = pd.DataFrame(history.history)
 metrics.head()
 
@@ -161,8 +161,7 @@ print("{:15}{:5}\t {}\n".format("Word", "True", "Pred"))
 print("-" *30)
 for w, true, pred in zip(X_test[i], y_true, p[0]):
     print("{:15}{}\t{}".format(words[w-1], tags[true], tags[pred]))
-
-    ```
+```
 
 ### OUTPUT
 
